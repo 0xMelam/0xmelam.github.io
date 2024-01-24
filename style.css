@@ -22,7 +22,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 9%;
+  padding: 2rem 9%;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -39,6 +39,7 @@ header {
 
 .logo a{
   color: white;
+  text-decoration: none;
 }
 
 .logo:hover {

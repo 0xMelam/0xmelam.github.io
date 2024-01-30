@@ -603,7 +603,7 @@ span {
     top: 100%;
     right: 0;
     width: 50%;
-    padding: 1rem 3%;
+    padding: 1rem 5%;
     background: white;
     backdrop-filter: blur(20px);
     border-left: 2px solid #6fa0ff;
@@ -628,11 +628,11 @@ span {
 
   .home{
     flex-direction: column;
-    margin: 5rem 4rem;
+    margin: 5rem 5rem;
   }
 
   .home-content h3{
-    font-size: 2.6rem;
+    font-size: 4rem;
   }
 
   .home-content h1{
@@ -641,7 +641,7 @@ span {
   }
 
   .home-content p{
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
   }
 
@@ -664,6 +664,10 @@ span {
     margin-bottom: 3rem;
   }
 
+  .about p{
+    font-size: 2.4rem;
+  }
+
 
   .timeline-items::before {
     left: 7px;
@@ -679,6 +683,14 @@ span {
     padding-left: 37px;
   }
 
+  .timeline p{
+    font-size: 2rem;
+  }
+
+  .heading{
+    text-align: center;
+    font-size: 5rem;
+  }
   .timeline-dot {
     left: 0;
   }
@@ -695,9 +707,17 @@ span {
     margin: 0 2rem 4rem;
   }
 
+  .publications p{
+    font-size: 2rem;
+  }
+
   .publications img{
     width: 52vw;
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+
+  .footer{
+    width: 100%;
   }
 }

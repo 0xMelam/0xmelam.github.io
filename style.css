@@ -573,6 +573,19 @@ span {
   color: #181c27;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #6fa0ff;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #181c27;
+  width: 30px;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;

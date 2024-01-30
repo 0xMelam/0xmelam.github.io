@@ -20,7 +20,7 @@
 
 <body>
   <header>
-    <h2 class="logo"><a href="#home" class="active">Mehdi.</a></h2>
+    <h2 class="logo"><a href="#home" class="active">Mehdi</a></h2>
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
       <a href="#about">About</a>
@@ -63,7 +63,7 @@
       <p> I am a recent graduate based in Montreal, propelled by a passion for exploring diverse cultures and
         experiences. My journey has led me through the landscapes of Canada, Tunisia, and Saudi Arabia, fostering a
         global perspective that I bring to my professional aspirations. I am a proud alum of Lakehead University with a
-        degree in computer science and a certificate in entrepreneurship.</p>
+        degree in Computer Science and a certificate in Entrepreneurship.</p>
 
       <p>Fluent in English, French, and Arabic, I possess strong communication skills crucial for fostering
         collaboration and understanding in a multicultural setting. Despite being at the early stages of my professional
@@ -75,14 +75,15 @@
 
       <p>Tools I use on the daily:</p>
       <div class="tools-icons">
-        <li href=""><i class="bx bxl-html5"></i></li>
-        <li href=""><i class="bx bxl-css3"></i></li>
-        <li href=""><i class="bx bxl-javascript"></i></li>
-        <li href=""><i class="bx bxl-react"></i></li>
-        <li href=""><i class="bx bxl-mongodb"></i></li>
-        <li href=""><i class="bx bxl-github"></i></li>
-        <li href=""><i class="bx bxl-visual-studio"></i></li>
-        <li href=""><i class="bx bxl-figma"></i></li>
+        <li><i class="bx bxl-html5"></i></li>
+        <li><i class="bx bxl-css3"></i></li>
+        <li><i class="bx bxl-javascript"></i></li>
+        <li><i class='bx bxl-nodejs'></i></li>
+        <li><i class="bx bxl-react"></i></li>
+        <li><i class="bx bxl-mongodb"></i></li>
+        <li><i class="bx bxl-github"></i></li>
+        <li><i class="bx bxl-visual-studio"></i></li>
+        <li><i class="bx bxl-figma"></i></li>
       </div>
       <a href="#" class="btn">Download Résumé</a>
     </div>
@@ -208,37 +209,35 @@
           <a href="#"><i class="bx bx-link"></i></a>
         </div>
       </div>
-      
+
+      <div class="projects-box">
+        <img src="nft.png" alt="" />
+        <div class="projects-info">
+          <h4>Crypto Price Tracker</h4>
+          <p>
+            A simple app that fetches the price of my favorite cryptocurrencies through Coingecko's API.
+          </p>
+          <a href="#"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <img src="tictactoe.png" alt="" />
+        <div class="projects-info">
+          <h4>Tic Tac Toe</h4>
+          <p>
+            Tic-Tac-Toe game
+          </p>
+          <a href="#"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
       <div class="projects-box">
         <img src="talkez.jpeg" alt="" />
         <div class="projects-info">
-          <h4>TalkEZ</h4>
+          <h4>Secret</h4>
           <p>
-            Single Word Speech-To-Text android application for individuals
-            with severe speech disorders
-          </p>
-          <a href="#"><i class="bx bx-link"></i></a>
-        </div>
-      </div>
-
-      <div class="projects-box">
-        <img src="sentimenty.jpeg" alt="" />
-        <div class="projects-info">
-          <h4>Sentimenty</h4>
-          <p>
-            Multi-label text classification NLP models to extract sentiments
-            from ratemyprofessors.com comments.
-          </p>
-          <a href="#"><i class="bx bx-link"></i></a>
-        </div>
-      </div>
-
-      <div class="projects-box">
-        <img src="jhin.jpeg" alt="" />
-        <div class="projects-info">
-          <h4>League Of Wordle</h4>
-          <p>
-            Wordle Spinoff for League of Legends Champions
+            Currently working on a CRUD app related to fitness. Stay tuned!
           </p>
           <a href="#"><i class="bx bx-link"></i></a>
         </div>
@@ -264,13 +263,16 @@
 
   <section class="contact" id="contact">
     <h2 class="heading">Contact Me</h2>
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8c8ff85e-8fd5-4786-8055-4a713b95b306">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-        <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email Address" name="email" required>
+        <input type="text" placeholder="Subject" name="Subject"required>
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <textarea id="" cols="30" rows="10" placeholder="Your Message" name="message" required></textarea>
+      <input type="checkbox" name="botcheck" id="" style="display: none;">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
@@ -287,6 +289,7 @@
     </p>
     <p class="copyright">100% Powered by Canadian Maple Syrup and Tunisian Harissa 🇨🇦 🇹🇳</p>
   </footer>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="main.js"></script>
 </body>
 

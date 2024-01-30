@@ -167,6 +167,7 @@ span {
   background-color: #6fa0ff;
 }
 
+
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
@@ -366,6 +367,11 @@ span {
   margin-bottom: 5rem;
 }
 
+.projects h3{
+  align-items: center;
+  font-size: 4rem;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -411,6 +417,17 @@ span {
   background: radial-gradient(rgba(0, 0, 0, 0.5), #6fa0ff);
   transform: scale(1.1);
 }
+.projects h4 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.pink-github{
+  color: pink;
+  border-bottom: 2px solid pink;
+}
 
 .projects-info h4 {
   font-size: 3rem;
@@ -441,6 +458,9 @@ span {
   color: white;
 }
 
+.github-icon{
+  font-size: 5rem;
+}
 
 .publications {
   display: flex;
@@ -559,6 +579,20 @@ span {
   }
 }
 
+
+@media (max-width: 991px){
+  header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+
+
 @media (max-width: 895px) {
   #menu-icon {
     display: block;
@@ -567,11 +601,13 @@ span {
   .navbar {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     padding: 1rem 3%;
     background: white;
-    border-bottom: 1px solid pink;
+    backdrop-filter: blur(20px);
+    border-left: 2px solid #6fa0ff;
+    border-bottom: 2px solid #6fa0ff;
     display: none;
   }
 
@@ -590,6 +626,45 @@ span {
     display: none;
   }
 
+  .home{
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }
+
+  .home-content h3{
+    font-size: 2.6rem;
+  }
+
+  .home-content h1{
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+
+  .home-content p{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .home-img img{
+    width: 56vw;
+    margin-top: -2rem;
+  }
+
+  .about{
+    flex-direction: column-reverse;
+  }
+
+  .about-content{
+    margin: 0 2rem 4rem;
+  }
+
+  .about img{
+    width: 52vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+
   .timeline-items::before {
     left: 7px;
   }
@@ -606,5 +681,23 @@ span {
 
   .timeline-dot {
     left: 0;
+  }
+
+  .projects-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .publications{
+    flex-direction: column;
+  }
+
+  .publications-content{
+    margin: 0 2rem 4rem;
+  }
+
+  .publications img{
+    width: 52vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
